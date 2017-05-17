@@ -1,0 +1,287 @@
+@font-face {
+    font-family: 'helveticaneueregular';
+    src: url('../fonts/helveticaneue-webfont.woff2') format('woff2'),
+         url('../fonts/helveticaneue-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+}
+
+body {
+  font-family: helveticaneueregular;
+}
+
+/* TOP NAV*/
+
+.top-nav {
+  height: 43px;
+  line-height: 43px;
+  width: 90%;
+  text-align: right;
+  margin-left: 67px;
+  /*background-image: "img/top-nav-background-pic.png";
+  background-repeat: repeat-x;*/
+  background-color: #075190;
+}
+
+.top-menu li {
+  display: inline-block;
+  padding-right: 13px;
+  height: 43px;
+}
+
+.top-menu li a {
+  font-size: 14px;
+  text-shadow: 0px 0px 1px white;
+  text-decoration: none;
+  line-height: 43px;
+  padding-left: 10px;
+}
+
+.top-menu li:hover {
+  height: 43px;
+  background-color: #4eabda;
+}
+
+li a:hover {
+  color: white;
+  background-color: #4eabda;
+}
+span:hover {
+  color: white;
+}
+
+.left-menu {
+  color: #5cb0e8;
+}
+
+.right-menu {
+  color: white;
+}
+
+.flag {
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+
+
+
+
+
+
+
+/*CADASTRE-CE*/
+
+.cadastre-window {
+  max-width: 559px;
+  width: 100%;
+  height: 670px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  text-align: center;
+}
+
+.cadastre-name p {
+  font-family: Tahoma;
+  font-size: 24pt;
+  color: white;
+  border-bottom: 1px solid #bec7b4;
+  padding-bottom: 21px;
+}
+
+
+
+
+/*LOG-IN-BUTTON*/
+
+.log-in-button:before {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 34px;
+  height: 100%;
+}
+.log-in-button:focus {
+  outline: none;
+}
+.log-in-button:active {
+  box-shadow: inset 0 0 0 32px rgba(0,0,0,0.1);
+}
+
+.log-in-button {
+  box-sizing: border-box;
+  position: relative;
+  background-color: #314c83;
+  background-image: linear-gradient(#4C69BA, #3B55A0);
+  text-shadow: 0 -1px 0 #354C8C;
+  height: 35px;
+  width: 276px;
+  border-radius: 7px;
+  margin: 0 auto;
+  color: white;
+  padding: 0 15px 0 46px;
+  border: none;
+  text-align: left;
+  line-height: 34px;
+  white-space: nowrap;
+  border-radius: 0.2em;
+  font-size: 16px;
+  color: #FFF;
+  /*background-image: url(module4/img/icon.png) 6px 6px no-repeat;*/
+}
+
+.log-in-button span {
+  color: white;
+  text-align: center;
+  line-height: 30px;
+}
+
+.log-in-button:before {
+  border-right: #364e92 1px solid;
+  /*background-image: url(module4/img/icon.png) 6px 6px no-repeat;*/
+}
+
+.log-in-button:hover, .log-in-button:focus {
+  background-color: #5B7BD5;
+  background-image: linear-gradient(#5B7BD5, #4864B1);
+}
+
+/*LINE*/
+
+.line {
+  margin-top: 20px;
+}
+
+.line span {
+  display: inline-block;
+  position: relative;
+  color: #999999;
+}
+
+.line span:before, .line span:after {
+  content: "";
+  position: absolute;
+  height: 0px;
+  border-bottom: 2px solid #000000;
+  border-top: 2px solid #666666;
+  top: 7px;
+  width: 123px;
+}
+
+.line span:before {
+  right: 100%;
+  margin-right: 10px;
+}
+
+.line span:after {
+  left: 100%;
+  margin-left: 10px;
+}
+
+
+/*BUTTONS*/
+
+
+.first-name {
+  margin-top: 30px;
+}
+
+.name-address-password input {
+  padding-left: 20px;
+  border: none;
+  border-bottom: solid 1px #484948;
+}
+
+.name-address-password input:focus {
+  width: 276px;
+  height: 35px;
+  box-shadow: -webkit-box-shadow: 0px 0px 68px 9px rgba(143,227,230,1);
+  -moz-box-shadow: 0px 0px 68px 9px rgba(143,227,230,1);
+  box-shadow: 0px 0px 68px 9px rgba(143,227,230,1);
+  background-color: #1b5288;
+}
+
+:focus::-webkit-input-placeholder {
+  color: white;
+}
+
+.last-name {
+  padding-top: 19px;
+}
+
+.email-address {
+    padding-top: 19px;
+}
+
+.choose-password {
+  padding-top: 19px;
+  padding-bottom: 19px;
+}
+
+.check {
+  padding-top: 21px;
+  padding-left: 1px;
+}
+
+.check span {
+  color: white;
+}
+
+
+/*CREATE BUTTON*/
+
+
+.create-button {
+  width: 151px;
+  height: 36px;
+  background-color: #3586ca;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.create-button span {
+  color: white;
+  font-size: 14px;
+}
+
+
+
+.name-address-password input {
+  width: 276px;
+  height: 35px;
+  background-color: #0f0f0f;
+  color: #cccccc;
+  font-family: Tahoma;
+  font-size: 14pt;
+}
+
+
+.text-bottom {
+  max-width: 70%;
+  width: 100%;
+  margin-left: 70px;
+}
+
+
+.text-bottom p {
+  color: white;
+  /*padding-left: 124px;
+  padding-right: 127px;*/
+  text-align: center;
+  font-family: Tahoma;
+  font-size: 14px;
+}
