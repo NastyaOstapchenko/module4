@@ -6,34 +6,35 @@
     font-style: normal;
 }
 
-.wrapper {
-  width: 100%;
-  height: 100%;
-  margin: 0 auto;
-  text-align: center;
-  position: relative;
-}
-
 body {
   font-family: helveticaneueregular;
+  background-image: url(../img/Background.png);
+  background-size: cover;
+  /*background-repeat: no-repeat;*/
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  /*margin: 0 auto;*/
+  position: relative;
 }
 
 /* TOP NAV*/
 
 .top-nav {
-  height: 43px;
   line-height: 43px;
-  width: 90%;
+  width: 100%;
   text-align: right;
-  margin-left: 67px;
-  /*background-image: "img/top-nav-background-pic.png";
-  background-repeat: repeat-x;*/
   background-color: #075190;
+}
+
+.top-menu {
+  /*height: 10%;*/
+  margin: 0 auto;
 }
 
 .top-menu li {
   display: inline-block;
-  padding-right: 13px;
+  text-align: center;
   height: 43px;
 }
 
@@ -43,6 +44,7 @@ body {
   text-decoration: none;
   line-height: 43px;
   padding-left: 10px;
+  padding-right: 10px;
 }
 
 .top-menu li:hover {
@@ -74,30 +76,23 @@ span:hover {
 
 
 
-
-
-
-
 /*CADASTRE-CE*/
 
 .cadastre-window {
   max-width: 559px;
-  width: 100%;
-  height: 670px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  /*width: 100%;*/
+  margin-left: 50%;
+  transform: translateX(-50%);
   background-color: rgba(0, 0, 0, 0.5);
-  position: absolute;
-  text-align: center;
 }
 
 .cadastre-name p {
-  font-family: Tahoma;
-  font-size: 24pt;
+  /*font-family: Tahoma;*/
+  font-size: 16pt;
   color: white;
-  border-bottom: 1px solid #bec7b4;
-  padding-bottom: 21px;
+  border-bottom: 2px solid #bec7b4;
+  padding-bottom: 7px;
+  padding-top: 10px;
 }
 
 
@@ -114,9 +109,9 @@ span:hover {
   width: 34px;
   height: 100%;
 }
-.log-in-button:focus {
+/*.log-in-button:focus {
   outline: none;
-}
+}*/
 .log-in-button:active {
   box-shadow: inset 0 0 0 32px rgba(0,0,0,0.1);
 }
@@ -127,26 +122,21 @@ span:hover {
   background-color: #314c83;
   background-image: linear-gradient(#4C69BA, #3B55A0);
   text-shadow: 0 -1px 0 #354C8C;
-  height: 35px;
+  height: 50px;
   width: 276px;
   border-radius: 7px;
   margin: 0 auto;
   color: white;
-  padding: 0 15px 0 46px;
+  padding: 10px 15px 10px 46px;
   border: none;
   text-align: left;
-  line-height: 34px;
+  line-height: 50px;
   white-space: nowrap;
   border-radius: 0.2em;
   font-size: 16px;
   color: #FFF;
+  text-decoration: none;
   /*background-image: url(module4/img/icon.png) 6px 6px no-repeat;*/
-}
-
-.log-in-button span {
-  color: white;
-  text-align: center;
-  line-height: 30px;
 }
 
 .log-in-button:before {
@@ -196,7 +186,7 @@ span:hover {
 
 
 .first-name {
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 .name-address-password input {
@@ -236,7 +226,7 @@ span:hover {
   padding-left: 1px;
 }
 
-.check span {
+.check label {
   color: white;
 }
 
@@ -246,10 +236,9 @@ span:hover {
 
 .create-button {
   width: 151px;
-  height: 36px;
+  height: 35px;
   background-color: #3586ca;
-  margin-top: 20px;
-  margin-bottom: 10px;
+  margin-top: 10px;
   border-radius: 5px;
 }
 
@@ -265,23 +254,25 @@ span:hover {
   height: 35px;
   background-color: #0f0f0f;
   color: #cccccc;
-  font-family: Tahoma;
-  font-size: 14pt;
 }
 
+
+
+
+
+/*TEXT-BOTTOM*/
 
 .text-bottom {
   max-width: 70%;
   width: 100%;
-  margin-left: 70px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  /*margin-top: 2px;*/
 }
 
 
 .text-bottom p {
   color: white;
-  /*padding-left: 124px;
-  padding-right: 127px;*/
   text-align: center;
-  font-family: Tahoma;
-  font-size: 14px;
+  padding-bottom: 7px;
 }
