@@ -10,11 +10,10 @@ body {
   font-family: helveticaneueregular;
   background-image: url(../img/Background.png);
   background-size: cover;
-  /*background-repeat: no-repeat;*/
+  background-repeat: no-repeat;
   width: 100%;
   height: 100%;
   text-align: center;
-  /*margin: 0 auto;*/
   position: relative;
 }
 
@@ -79,7 +78,8 @@ span:hover {
 /*CADASTRE-CE*/
 
 .cadastre-window {
-  max-width: 559px;
+  max-width: 560px;
+  min-width: 560px;
   /*width: 100%;*/
   margin-left: 50%;
   transform: translateX(-50%);
