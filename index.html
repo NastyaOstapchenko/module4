@@ -7,7 +7,6 @@
     <title>Module4</title>
   </head>
 
-  <body>
 
     <nav class="top-nav">
 
@@ -45,6 +44,8 @@
 
     </nav>
 
+<body>
+
       <div class="cadastre-window">
 
         <div class="cadastre-name">
@@ -57,7 +58,8 @@
 
         <div class="line"><span>OU</span></div>
 
-        <form action="#" method="post">
+    <form action="#" method="post">
+
       <div class="name-address-password">
 
         <div class="first-name">
@@ -69,36 +71,36 @@
         </div>
 
         <div class="email-address">
-          <input type="email" name="email-address" placeholder="Email Address">
+          <input type="email" name="email-address" placeholder="Email Address" required>
         </div>
 
         <div class="choose-password">
-          <input type="password" name="choose-password" placeholder="Choose Password">
+          <input type="password" name="choose-password" placeholder="Choose Password" required>
         </div>
 
         <div class="password-confirm">
-          <input type="password" name="password-confirm" placeholder="Password Confirm">
+          <input type="password" name="password-confirm" placeholder="Password Confirm" required>
         </div>
       </div>
 
         <div class="check">
+          <label>
           <input type="checkbox" id="checkbox">
             <label for="checkbox">Send me Your updates and tips</label>
-          </input>
+          </label>
         </div>
-  </form>
 
-      <form>
         <div>
-            <button class="create-button" name="button"><span>Create my Account</span></button>
+            <button type="submit" class="create-button" name="button"><span>Create my Account</span></button>
         </div>
-      </form>
+
+  </form>
 
         <div class="text-bottom">
         <p>By clicking the button above, you agree to the Term of Service Xiew our Private Policy.</p>
         </div>
 
-        </div>
-
+    </div>
   </body>
+
 </html>
